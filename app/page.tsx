@@ -1,11 +1,8 @@
 import Hero from "@/components/Hero";
-import StorySection from "@/components/StorySection";
 import CelebrationSection from "@/components/CelebrationSection";
 import GiftsSection from "@/components/GiftsSection";
-import GallerySection from "@/components/GallerySection";
 import RsvpForm from "@/components/RsvpForm";
 import SectionDivider from "@/components/SectionDivider";
-import LeafDivider from "@/components/LeafDivider";
 
 export default function Home() {
   return (

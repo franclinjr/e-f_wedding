@@ -29,16 +29,16 @@ export function formatPhone(value: string): string {
  * Validação básica de um formulário de RSVP.
  */
 export function validateRsvp(data: {
-  fullName: string;
-  phone: string;
+  name: string;
+  telephone: string;
 }): string | null {
-  if (!data.fullName.trim()) {
+  if (!data.name.trim()) {
     return "Por favor, informe seu nome completo.";
   }
-  if (data.fullName.trim().length < 3) {
+  if (data.name.trim().length < 3) {
     return "Nome muito curto. Verifique os dados informados.";
   }
-  const digits = data.phone.replace(/\D/g, "");
+  const digits = data.telephone.replace(/\D/g, "");
   if (digits.length < 10) {
     return "Por favor, informe um telefone válido com DDD.";
   }

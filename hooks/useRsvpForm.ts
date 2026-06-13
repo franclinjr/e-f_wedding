@@ -6,10 +6,9 @@ import { submitRsvp } from "@/services/rsvpService";
 import { formatPhone, validateRsvp } from "@/utils";
 
 const initialData: RsvpFormData = {
-  fullName: "",
-  phone: "",
-  guestsCount: 1,
-  dietaryRestrictions: "",
+  name: "",
+  telephone: "",
+  person_quantity: 1,
   message: "",
 };
 
@@ -30,7 +29,7 @@ export function useRsvpForm() {
   }
 
   function handlePhoneChange(value: string) {
-    updateField("phone", formatPhone(value));
+    updateField("telephone", formatPhone(value));
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -47,9 +46,7 @@ export function useRsvpForm() {
     try {
       const result = await submitRsvp(formData);
       setResponse(result);
-      if (result.success) {
-        setFormData(initialData);
-      } else {
+      if (!result.success) {
         setError(result.message);
       }
     } catch {

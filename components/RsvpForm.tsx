@@ -32,13 +32,12 @@ export default function RsvpForm() {
       >
         <CheckCircle2 className="text-sage-dark" size={48} strokeWidth={1.5} />
         <h3 className="font-serif text-2xl text-ink">
-          Obrigado, {formData.fullName.split(" ")[0] || "querido(a)"}!
+          Obrigado, {formData.name.split(" ")[0] || ""}!
         </h3>
         <p className="font-sans text-sm text-ink-light leading-relaxed">
           Sua presença está confirmada e já significa muito para nós. Estamos
           ansiosos para celebrar esse dia especial com você!
         </p>
-        <LeafDivider className="text-sage-dark mt-2" />
       </motion.div>
     );
   }
@@ -51,16 +50,16 @@ export default function RsvpForm() {
     >
       {/* Nome completo */}
       <div className="flex flex-col gap-1.5">
-        <label htmlFor="fullName" className="font-sans text-xs uppercase tracking-widest2 text-ink-muted">
+        <label htmlFor="name" className="font-sans text-xs uppercase tracking-widest2 text-ink-muted">
           Nome completo
         </label>
         <input
-          id="fullName"
-          name="fullName"
+          id="name"
+          name="name"
           type="text"
           required
-          value={formData.fullName}
-          onChange={(e) => updateField("fullName", e.target.value)}
+          value={formData.name}
+          onChange={(e) => updateField("name", e.target.value)}
           placeholder="Seu nome completo"
           className="bg-transparent border-b border-ink/30 focus:border-sage-dark outline-none py-2 font-sans text-ink placeholder:text-ink-muted/60 transition-colors"
         />
@@ -68,15 +67,15 @@ export default function RsvpForm() {
 
       {/* Telefone */}
       <div className="flex flex-col gap-1.5">
-        <label htmlFor="phone" className="font-sans text-xs uppercase tracking-widest2 text-ink-muted">
+        <label htmlFor="telephone" className="font-sans text-xs uppercase tracking-widest2 text-ink-muted">
           Telefone
         </label>
         <input
-          id="phone"
-          name="phone"
+          id="telephone"
+          name="telephone"
           type="tel"
           required
-          value={formData.phone}
+          value={formData.telephone}
           onChange={(e) => handlePhoneChange(e.target.value)}
           placeholder="(11) 99999-9999"
           className="bg-transparent border-b border-ink/30 focus:border-sage-dark outline-none py-2 font-sans text-ink placeholder:text-ink-muted/60 transition-colors"
@@ -85,26 +84,26 @@ export default function RsvpForm() {
 
       {/* Quantidade de adultos */}
       <div className="flex flex-col gap-1.5">
-        <label htmlFor="guestsCount" className="font-sans text-xs uppercase tracking-widest2 text-ink-muted">
+        <label htmlFor="person_quantity" className="font-sans text-xs uppercase tracking-widest2 text-ink-muted">
           Quantidade de adultos envolvendo você
         </label>
         <div className="flex items-center gap-4">
           <button
             type="button"
             onClick={() =>
-              updateField("guestsCount", Math.max(1, formData.guestsCount - 1))
+              updateField("person_quantity", Math.max(1, formData.person_quantity - 1))
             }
             className="w-9 h-9 rounded-full border border-ink/20 flex items-center justify-center text-ink hover:border-sage-dark hover:text-sage-dark transition-colors"
             aria-label="Diminuir quantidade"
           >
             <Minus size={16} />
           </button>
-          <span className="font-serif text-xl text-ink w-8 text-center" id="guestsCount">
-            {formData.guestsCount}
+          <span className="font-serif text-xl text-ink w-8 text-center" id="person_quantity">
+            {formData.person_quantity}
           </span>
           <button
             type="button"
-            onClick={() => updateField("guestsCount", formData.guestsCount + 1)}
+            onClick={() => updateField("person_quantity", formData.person_quantity + 1)}
             className="w-9 h-9 rounded-full border border-ink/20 flex items-center justify-center text-ink hover:border-sage-dark hover:text-sage-dark transition-colors"
             aria-label="Aumentar quantidade"
           >

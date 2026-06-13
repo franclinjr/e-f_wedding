@@ -65,9 +65,24 @@ export default function CelebrationSection() {
       {/* Endereço */}
       <div className="flex flex-col items-center gap-2 mb-10" >
         <MapPin className="text-sage-dark" size={28} strokeWidth={1.5} />
-        <p className="font-serif text-lg text-ink uppercase tracking-wide">
-          Restaurante Tucker Burger &amp; Grill
-        </p>
+        <div className="flex items-center gap-2">
+          <p className="font-serif text-lg text-ink uppercase tracking-wide">
+            Restaurante Tucker Burger &amp; Grill
+          </p>
+          <a
+            href="https://www.instagram.com/tucker.burger.grill/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram do Tucker Burger & Grill"
+            className="text-ink-muted hover:text-sage-dark transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+            </svg>
+          </a>
+        </div>
         <p className="font-sans text-sm text-ink-light leading-relaxed">
           Rod. Régis Bittencourt, Km 280
           <br />

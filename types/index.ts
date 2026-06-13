@@ -1,10 +1,9 @@
 // Tipos compartilhados do projeto
 
 export interface RsvpFormData {
-  fullName: string;
-  phone: string;
-  guestsCount: number;
-  dietaryRestrictions: string;
+  name: string;
+  telephone: string;
+  person_quantity: number;
   message: string;
 }
 
