@@ -21,7 +21,8 @@ export interface Gift {
   suggestedValue: number;
   imageUrl?: string;
   category: GiftCategory;
-  isContribution?: boolean; // true para "Contribua com a Lua de Mel"
+  isContribution?: boolean;
+  paymentUrl: string;
 }
 
 export interface TimelineMilestone {

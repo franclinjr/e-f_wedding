@@ -82,10 +82,10 @@ export default function RsvpForm() {
         />
       </div>
 
-      {/* Quantidade de adultos */}
+      {/* Quantidade de pessoas */}
       <div className="flex flex-col gap-1.5">
         <label htmlFor="person_quantity" className="font-sans text-xs uppercase tracking-widest2 text-ink-muted">
-          Quantidade de adultos envolvendo você
+          Quantidade de pessoas envolvendo você
         </label>
         <div className="flex items-center gap-4">
           <button
