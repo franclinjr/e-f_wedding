@@ -29,6 +29,18 @@ export default function Footer() {
         <p className="text-xs text-cream-100/40 mt-8">
           18 · 07 · 2026 — Embu das Artes, SP
         </p>
+
+        <p className="text-xs text-cream-100/30">
+          © 2026 Érika &amp; Franclin &nbsp;•&nbsp; Desenvolvido por{" "}
+          <a
+            href="https://www.linkedin.com/in/franclin-junior-728310207/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 hover:text-cream-100/60 transition-colors"
+          >
+            Franclin Junior
+          </a>
+        </p>
       </div>
     </footer>
   );
