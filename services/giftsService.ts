@@ -20,12 +20,28 @@ export async function getGifts(): Promise<Gift[]> {
       paymentUrl: "https://mpago.la/1zzpWK9",
     },
     {
+      id: "sofá-retratil",
+      name: "Sofá Retrátil",
+      description: "Sofá retrátil e reclinável para momentos de conforto e relaxamento.",
+      suggestedValue: 1800,
+      category: "casa",
+      paymentUrl: "https://mpago.la/2CUZBbZ",
+    },
+    {
       id: "jogo-de-cama",
       name: "Jogo de Cama Casal",
       description: "Conjunto de lençóis e fronhas de algodão egípcio.",
       suggestedValue: 180,
       category: "casa",
       paymentUrl: "https://mpago.la/2ABkFsc",
+    },
+    {
+      id: "conjunto-de-copos",
+      name: "Conjunto de Copos",
+      description: "Conjunto de copos elegantes para brindar os momentos especiais.",
+      suggestedValue: 50,
+      category: "casa",
+      paymentUrl: "https://mpago.la/1Q9cK5E",
     },
     {
       id: "panelas",
@@ -44,6 +60,14 @@ export async function getGifts(): Promise<Gift[]> {
       paymentUrl: "https://mpago.la/2cL5Hjz",
     },
     {
+      id: "tv-smart",
+      name: "TV Smart 55\"",
+      description: "Uma TV Smart de 55 polegadas para momentos de entretenimento a dois.",
+      suggestedValue: 2500,
+      category: "casa",
+      paymentUrl: "https://mpago.la/33mGzuB",
+    },
+    {
       id: "utensilios-de-cozinha",
       name: "Utensílios de Cozinha",
       description: "Conjunto de utensílios essenciais para o dia a dia na cozinha.",
@@ -51,5 +75,29 @@ export async function getGifts(): Promise<Gift[]> {
       category: "casa",
       paymentUrl: "https://mpago.la/2HqReku",
     },
+    {
+      id: "churrasqueira-portatil",
+      name: "Churrasqueira Portátil",
+      description: "Churrasqueira portátil sem fumaça para momentos de lazer e confraternização.",
+      suggestedValue: 700,
+      category: "casa",
+      paymentUrl: " https://mpago.la/2oLbMVL",
+    },  
+    {
+      id: "caminho-de-mesa",
+      name: "Caminho de Mesa",
+      description: "Caminho de mesa elegante para decorar a mesa de jantar.",
+      suggestedValue: 35,
+      category: "casa",
+      paymentUrl: "https://mpago.la/1FfsSYf",
+    },
+    {
+      id: "panificadora",
+      name: "Panificadora",
+      description: "Panificadora automática para preparar pães frescos em casa.",
+      suggestedValue: 490,
+      category: "casa",
+      paymentUrl: "https://mpago.la/2C21pA2",
+    }
   ];
 }
