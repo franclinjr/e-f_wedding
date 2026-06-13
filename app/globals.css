@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-cream: #f7f3ec;
+  --color-ink: #2b2a28;
+  --color-sage: #a6ad8e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+}
+
+/* Ornamento de folhagem reutilizável (SVG inline via componente) */
+.leaf-divider svg {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Linha decorativa com ponto central, como no convite impresso */
+.divider-dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.divider-dot::before,
+.divider-dot::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  max-width: 120px;
+  background-color: currentColor;
+  opacity: 0.35;
+}
+.divider-dot .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background-color: currentColor;
+  opacity: 0.6;
+}
+
+/* Selo de cera estilizado (CSS, sem imagem) */
+.wax-seal {
+  width: 96px;
+  height: 96px;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 35% 30%, #3a3a38, #1f1e1c 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    inset 0 2px 6px rgba(255, 255, 255, 0.08),
+    inset 0 -4px 10px rgba(0, 0, 0, 0.5),
+    0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Scrollbar discreta */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-sage);
+  border-radius: 9999px;
+}
