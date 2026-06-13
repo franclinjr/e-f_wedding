@@ -19,7 +19,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-cream-50/85 backdrop-blur-sm border-b border-ink/10">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-cream-50 border-b border-ink/10">
       <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         <Link href="/" onClick={() => setOpen(false)}>
           <Monogram size="sm" />

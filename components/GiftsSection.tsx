@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Loader2 } from "lucide-react";
-import LeafDivider from "./LeafDivider";
 import SectionDivider from "./SectionDivider";
 import GiftCard from "./GiftCard";
 import { useGifts } from "@/hooks/useGifts";
@@ -22,22 +21,19 @@ export default function GiftsSection() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
-        <p className="font-script text-2xl text-sage-dark mb-2">
-          Com carinho
-        </p>
         <h2 className="font-serif text-3xl md:text-4xl text-ink mb-6">
           Lista de Presentes
         </h2>
 
 
-        <p className="font-sans text-sm text-ink-light max-w-xl mx-auto mb-4 leading-relaxed">
-          A maior alegria será contar com a presença de cada um de vocês.
-          Caso desejem nos presentear, preparamos esta lista com carinho,
-          incluindo a opção de contribuir com a nossa lua de mel.
+        <p className="font-sans text-sm text-ink-light max-w-xl mx-auto mb-8 leading-relaxed">
+          A sua presença é o nosso maior presente.
+          Mas, caso desejem nos presentear, preparamos esta lista para tornar
+          esse momento ainda mais especial.
         </p>
-      </motion.div>
 
-      <SectionDivider className="mb-10 text-sage" />
+        <SectionDivider className="mb-8" />
+      </motion.div>
 
       {loading && (
         <div className="flex flex-col items-center gap-3 py-12 text-ink-light">

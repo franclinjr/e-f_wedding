@@ -33,9 +33,7 @@ export default function Home() {
 
       <section id="rsvp" className="scroll-mt-20">
         <div className="py-16 px-6 max-w-3xl mx-auto text-center">
-          <p className="font-script text-2xl text-sage-dark mb-2">
-            Sua presença é o nosso maior presente
-          </p>
+         
           <h2 className="font-serif text-3xl md:text-4xl text-ink mb-6">
             Confirmação de Presença
           </h2>

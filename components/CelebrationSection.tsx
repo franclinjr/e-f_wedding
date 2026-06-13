@@ -19,11 +19,8 @@ export default function CelebrationSection() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
-        <p className="font-script text-2xl text-sage-dark mb-2">
-          Quando e onde
-        </p>
         <h2 className="font-serif text-3xl md:text-4xl text-ink mb-6">
-          A Celebração
+          Local da Comemoração
         </h2>
 
       </motion.div>
@@ -34,10 +31,9 @@ export default function CelebrationSection() {
           Um momento especial
         </p>
         <p className="font-sans text-sm text-ink-light leading-relaxed">
-          Nossa celebração acontecerá em formato de{" "}
-          <strong className="text-ink">almoço simples</strong>, reunindo as
-          pessoas mais queridas para um momento de muito carinho e boa
-          companhia.
+          Nossa comemoração acontecerá em um{" "}
+          <strong className="text-ink">almoço especial</strong>, reunindo as
+          pessoas mais queridas para compartilhar conosco esse momento tão importante.
         </p>
       </div>
 
@@ -202,7 +198,7 @@ export default function CelebrationSection() {
                 Inclui entrada, prato principal e sobremesa 
               </p>
             </div>
-            <p className="font-serif text-xl text-ink">R$ 97</p>
+            <p className="font-serif text-xl text-ink">R$ 92</p>
           </div>
         </motion.div>
       </div>
